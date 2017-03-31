@@ -12,10 +12,10 @@ namespace UnitTests
         [TestMethod]
         public void KeyRecognitionTestMethod()
         {
-            IKey magKey = new MagneticKey("Magnetic");
-            IKey metKey = new MetalKey("Metal");
-            Assert.AreEqual("Magnetic", magKey.KeyType);
-            Assert.AreEqual("Metal", metKey.KeyType);
+            IKey magKey = new MagneticKey(KeyTypes.MagneticKey);
+            IKey metKey = new MetalKey(KeyTypes.MetalKey);
+            Assert.AreEqual(KeyTypes.MagneticKey, magKey.KeyType);
+            Assert.AreEqual(KeyTypes.MetalKey, metKey.KeyType);
         }
     }
 }

@@ -2,16 +2,16 @@
 {
     public class Product
     {
-        string _Name;
-        int _Id;
-        int _Cost;
+        private string mName;
+        private int mId;
+        private int mCost;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Product"/> class.
         /// </summary>
         public Product(int id)
         {
-            _Id = id;
+            mId = id;
         }
 
         /// <summary>
@@ -21,11 +21,11 @@
         {
             get
             {
-                return _Name;
+                return mName;
             }
             set
             {
-                _Name = value;
+                mName = value;
             }
         }
 
@@ -36,7 +36,7 @@
         {
             get
             {
-                return _Id;
+                return mId;
             }
         }
 
@@ -47,11 +47,11 @@
         {
             get
             {
-                return _Cost;
+                return mCost;
             }
             set
             {
-                _Cost = value;
+                mCost = value;
             }
         }
 

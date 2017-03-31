@@ -5,23 +5,23 @@ namespace SimpleWebApi
 {
     public class SimpleApiController : ApiController
     {
-        IRepository _Repository;
+        private IRepository mRepository;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SimpleApiController"/> class.
         /// </summary>
         public SimpleApiController()
         {
-            _Repository = new ProductsRepository();
+            mRepository = new ProductsRepository();
         }
 
         /// <summary>
         /// Gets this instance.
         /// </summary>
         [HttpGet]
-        public IEnumerable<Product> GetProducts()
+        public List<Product> GetProducts()
         {
-            return _Repository.GetProducts();
+            return mRepository.GetProducts();
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace SimpleWebApi
         [HttpPost]
         public void PostProduct(Product product)
         {
-            _Repository.PostProduct(product);
+            mRepository.PostProduct(product);
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace SimpleWebApi
         [HttpDelete]
         public void DeleteProduct(Product product)
         {
-            _Repository.DeleteProduct(product);
+            mRepository.DeleteProduct(product);
         }
 
     }

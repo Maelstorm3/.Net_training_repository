@@ -2,27 +2,30 @@
 
 namespace ClassesAndInterfaces.Task_5
 {
-    public static class Basket
+    public class Basket
     {
-        static List<Product> _ProductCollection;
+        private List<Product> mProductCollection;
 
-        static Basket()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Basket"/> class.
+        /// </summary>
+        public Basket()
         {
-            _ProductCollection = new List<Product>();
+            mProductCollection = new List<Product>();
         }
 
         /// <summary>
         /// Gets or sets the product collection.
         /// </summary>
-        public static List<Product> ProductCollection
+        public List<Product> ProductCollection
         {
             get
             {
-                return _ProductCollection;
+                return mProductCollection;
             }
             set
             {
-                _ProductCollection = value;
+                mProductCollection = value;
             }
         }
 

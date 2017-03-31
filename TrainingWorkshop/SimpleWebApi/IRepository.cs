@@ -5,7 +5,7 @@ namespace SimpleWebApi
     public interface IRepository
     {
         List<Product> GetProducts();
-        void DeleteProduct(Product product);
-        void PostProduct(Product product);
+        int DeleteProduct(Product product);
+        int PostProduct(Product product);
     }
 }

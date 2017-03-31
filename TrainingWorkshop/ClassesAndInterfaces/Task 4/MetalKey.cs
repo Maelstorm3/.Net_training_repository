@@ -6,7 +6,7 @@
         /// Initializes a new instance of the <see cref="MetalKey"/> class.
         /// </summary>
         /// <param name="keyType">Type of the key.</param>
-        public MetalKey(string keyType)
+        public MetalKey(KeyTypes keyType)
             : base(keyType)
         {
         }

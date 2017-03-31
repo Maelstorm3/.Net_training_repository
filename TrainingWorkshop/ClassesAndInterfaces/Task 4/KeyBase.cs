@@ -2,26 +2,32 @@
 
 namespace ClassesAndInterfaces.Task_4
 {
+   public enum KeyTypes
+    {
+        MetalKey,
+        MagneticKey
+    }
+
     public abstract class KeyBase : IKey
     {
-        string _KeyType;
+        private KeyTypes mKeyType;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="KeyBase"/> class.
         /// </summary>
-        public KeyBase(string keyType)
+        public KeyBase(KeyTypes keyType)
         {
-            _KeyType = keyType;
+            mKeyType = keyType;
         }
 
         /// <summary>
         /// Gets the type of the key.
         /// </summary>
-        public string KeyType
+        public KeyTypes KeyType
         {
             get
             {
-                return _KeyType;
+                return mKeyType;
             }
         }
 

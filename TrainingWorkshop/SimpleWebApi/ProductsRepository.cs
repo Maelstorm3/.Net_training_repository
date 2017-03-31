@@ -1,29 +1,51 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace SimpleWebApi
 {
     public class ProductsRepository : IRepository
     {
-        List<Product> _Products;
+        private List<Product> mProducts;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductsRepository"/> class.
         /// </summary>
         public ProductsRepository()
         {
-            _Products = new List<Product>() {
-                new Product() { Id=1, Name="1"},
-                new Product() { Id=2, Name="2"}
-            };
+            mProducts = new List<Product>();
+            Products = GetProducts();
+        }
+
+        /// <summary>
+        /// Gets or sets the products.
+        /// </summary>
+        public List<Product> Products
+        {
+            get
+            {
+                return mProducts;
+            }
+            set
+            {
+                mProducts = value;
+            }
         }
 
         /// <summary>
         /// Deletes the product.
         /// </summary>
-        public void DeleteProduct(Product product)
+        public int DeleteProduct(Product product)
         {
             if (product != null)
-                _Products.Remove(product);
+            {
+                var productId = product.Id;
+                mProducts.Remove(product);
+                return productId;
+            }
+            else
+            {
+                throw new Exception("Product is null");
+            }
         }
 
         /// <summary>
@@ -31,16 +53,29 @@ namespace SimpleWebApi
         /// </summary>
         public List<Product> GetProducts()
         {
-            return _Products;
+            //get some data from somewhere
+            return new List<Product>()
+            {
+                new Product() {Id=1, Name="1" },
+                new Product() {Id=2, Name="2" }
+            };
         }
 
         /// <summary>
         /// Posts the product.
         /// </summary>
-        public void PostProduct(Product product)
+        public int PostProduct(Product product)
         {
             if (product != null)
-                _Products.Add(product);
+            {
+                var productId = product.Id;
+                mProducts.Add(product);
+                return productId;
+            }
+            else
+            {
+                throw new Exception("New product is null");
+            }
         }
 
     }

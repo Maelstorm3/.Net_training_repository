@@ -8,14 +8,22 @@ namespace ClassesAndInterfaces.Task_3
 {
     public class Person
     {
-        List<Child> _Children = new List<Child>();
+        private List<Child> mChildren;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Person"/> class.
+        /// </summary>
+        public Person()
+        {
+            mChildren = new List<Child>();
+        }
 
         /// <summary>
         /// Adds the child.
         /// </summary>
         public void AddChild(string name, int age)
         {
-            _Children.Add(new Child() { Name = name, Age = age });
+            mChildren.Add(new Child() { Name = name, Age = age });
         }
 
         /// <summary>
@@ -23,7 +31,7 @@ namespace ClassesAndInterfaces.Task_3
         /// </summary>
         public int GetChildrenCount()
         {
-            return _Children.Count;
+            return mChildren.Count;
         }
 
         class Child

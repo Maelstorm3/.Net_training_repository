@@ -3,6 +3,6 @@
     public interface IKey
     {
         void OpenTheDoor();
-        string KeyType { get; }
+        KeyTypes KeyType { get; }
     }
 }

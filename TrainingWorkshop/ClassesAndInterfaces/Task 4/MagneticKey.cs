@@ -6,7 +6,7 @@
         /// Initializes a new instance of the <see cref="MagneticKey"/> class.
         /// </summary>
         /// <param name="keyType">Type of the key.</param>
-        public MagneticKey(string keyType)
+        public MagneticKey(KeyTypes keyType)
             : base(keyType)
         {
         }
