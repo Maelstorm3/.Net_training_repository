@@ -45,10 +45,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task 2\AbleToCountTypeExamplesClass.cs" />
+    <Compile Include="Task 3\Person.cs" />
+    <Compile Include="Task 4\IKey.cs" />
+    <Compile Include="Task 4\KeyBase.cs" />
+    <Compile Include="Task 4\MagneticKey.cs" />
+    <Compile Include="Task 4\MetalKey.cs" />
+    <Compile Include="Task 5\Basket.cs" />
+    <Compile Include="Task 5\Product.cs" />
+    <Compile Include="Task 5\SimpleApi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

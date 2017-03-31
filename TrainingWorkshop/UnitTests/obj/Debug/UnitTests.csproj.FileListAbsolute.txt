@@ -1,0 +1,8 @@
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\bin\Debug\ClassesAndInterfaces.exe
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\bin\Debug\ClassesAndInterfaces.pdb
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Nika\Documents\.Net_training_repository\TrainingWorkshop\UnitTests\obj\Debug\UnitTests.pdb
